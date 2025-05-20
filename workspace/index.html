@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
+</head>
+<body>
+    <div id="birds"></div>
+    <div class="card">
+    <h1>Dear Biden,</h1>
+    <img id ="joe" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Joe_Biden_presidential_portrait.jpg/500px-Joe_Biden_presidential_portrait.jpg" alt="Joe Biden">
+    <p>You make me at a loss for words!</p>
+    <p>Will you be my Valentines?</p>
+    <p id="love">
+        <span>L</span> 
+        <span>o</span> 
+        <span>v</span> 
+        <span>e</span> 
+        <br> Donald</p>
+    <div class="button-container">
+        <button id="yes">yes</button>
+        <button id="no">no</button>
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script>
+    VANTA.BIRDS({
+        el: "#birds",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 900.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        quantity: 4.0,
+        backgroundAlpha: 0.0,
+        birdSize: 1.0,
+        wingSpan: 10.0,
+        speedLimit: 2.0,
+        separation: 100.0,
+        alignment: 1.0,
+        cohesion: 1.0,
+        color1: 0xff58dc,
+        color2: 0xa75e5e
+    });
+</script>
+</html>
